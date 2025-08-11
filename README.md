@@ -7,6 +7,7 @@
 ## Dependencies
 
 1. [zh_avr_free_rtos](http://git.zh.com.ru/avr_libraries/zh_avr_free_rtos)
+2. [zh_avr_common](http://git.zh.com.ru/avr_libraries/zh_avr_common)
 
 ## Using
 
@@ -16,6 +17,7 @@ In an existing project, run the following command to install the component:
 cd ../your_project/lib
 git clone http://git.zh.com.ru/avr_libraries/zh_avr_free_rtos
 git clone http://git.zh.com.ru/avr_libraries/zh_avr_i2c
+git clone http://git.zh.com.ru/avr_libraries/zh_avr_common
 ```
 
 In the application, add the component:

@@ -1,15 +1,9 @@
 #include "zh_avr_i2c.h"
 
-#define ZH_ERROR_CHECK(cond, err, ...) \
-	if (!(cond))                       \
-	{                                  \
-		return err;                    \
-	}
-
-#define I2C_OK 0x01
-#define I2C_NACK 0x02
-#define I2C_COLLISION 0x04
-#define I2C_BUS_FAIL 0x08
+#define I2C_OK AVR_BIT0
+#define I2C_NACK AVR_BIT1
+#define I2C_COLLISION AVR_BIT2
+#define I2C_BUS_FAIL AVR_BIT3
 
 #define I2C_START ((1 << TWINT) | (1 << TWEN) | (1 << TWIE))
 #define I2C_MASTER_READ 1
